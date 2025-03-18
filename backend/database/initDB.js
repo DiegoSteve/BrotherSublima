@@ -3,11 +3,11 @@ const { Client } = require("pg");
 
 // Configuración de conexión a PostgreSQL
 const client = new Client({
-  user: process.env.DB_USER || "luis_", // Valor por defecto si no se encuentra en .env
+  user: process.env.DB_USER || "diego", // Valor por defecto si no se encuentra en .env
   host: process.env.DB_HOST || "localhost",
   database: process.env.DB_NAME || "brothersublima",
-  password: process.env.DB_PASSWORD || "vicente33",
-  port: process.env.DB_PORT || 5433,
+  password: process.env.DB_PASSWORD || "diego",
+  port: process.env.DB_PORT || 5432,
 });
 
 const createTables = async () => {
